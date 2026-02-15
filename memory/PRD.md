@@ -23,14 +23,14 @@ Create a beautiful birthday website with great attractive UI for a friend (Harsh
 
 ## Features Implemented
 
-### Current Sections (December 15, 2025)
+### Current Sections (Updated December 15, 2025)
 
 1. **Hero Section** (`/app/frontend/src/components/BirthdayHero.jsx`)
-   - Full-screen hero with background image
+   - Full-screen hero with custom background image (Instagram photo)
    - Animated confetti effects
    - Floating balloon animations
-   - Personalized birthday message
-   - Music toggle button (UI ready)
+   - Personalized birthday message for Harsh Pandey
+   - Music toggle button (fully functional)
    - Smooth scroll indicator
 
 2. **Wishes Section** (`/app/frontend/src/components/WishesSection.jsx`)
@@ -52,23 +52,52 @@ Create a beautiful birthday website with great attractive UI for a friend (Harsh
 5. **Footer** (`/app/frontend/src/components/Footer.jsx`)
    - Beautiful gradient background
    - Celebration message
-   - Social/contact information ready
+   - Personalized footer for Harsh
+
+### Background Music Setup ✅
+
+**Song Details:**
+- **Title**: Ratiyaan
+- **Artists**: Hansika Pareek, Sagnik Kolay, Soham M
+- **Source**: Latest Hindi Love Song 2024
+- **File Location**: Hosted on Emergent Assets CDN
+- **URL**: https://customer-assets.emergentagent.com/job_birthday-joy-64/artifacts/g96nf174_Ratiyaan%20-%20Hansika%20Pareek%20%20SagnikKolay%20%20Soham%20M%20%20StereoAuxHits%20Latest%20Hindi%20Love%20Song%202024%20-%20Hansika%20Pareek%20%28youtube%29.mp3
+
+**Music Player Features:**
+- ✅ Toggle play/pause button in hero section
+- ✅ Music loops continuously
+- ✅ Volume set to 50% for comfortable listening
+- ✅ User can control playback
+- ✅ Music persists across page sections
+- ✅ Auto-cleanup on page unmount
+
+**Implementation:**
+- Audio initialized in App.js useEffect hook
+- Music data stored in mockData.js
+- Control button integrated in BirthdayHero component
+- Full audio player infrastructure ready
+
+### Custom Background Image ✅
+- **Hero Background**: Personal photo from Instagram
+- **Image URL**: Instagram CDN-hosted image
+- **Format**: WebP (optimized for web)
+- **Quality**: High resolution (1080x1080)
 
 ### Removed Sections (User Request)
 - ~~Photo Gallery~~ - Removed per user request
 - ~~Timeline/Memories Section~~ - Removed per user request
 
-### Mock Data
+### Data Configuration
 - All data stored in `/app/frontend/src/mockData.js`
-- Includes: person info, hero images, wishes, gift message
-- Birth date set to 2025-01-15 (can be updated)
+- Includes: person info, hero images, wishes, gift message, music playlist
+- Birth date set to 2025-01-15 (can be updated to actual date)
 
 ### Styling & Animations
 - Custom animations in `/app/frontend/src/index.css`
 - Confetti fall animation
 - Balloon floating animation
 - Fade-in-up transitions
-- Shake effects
+- Shake effects for interactive elements
 - Smooth scroll behavior
 
 ## Technical Stack
@@ -76,37 +105,79 @@ Create a beautiful birthday website with great attractive UI for a friend (Harsh
 - **UI Library**: Shadcn/UI components
 - **Styling**: Tailwind CSS with custom animations
 - **Icons**: Lucide React
-- **Images**: Unsplash (curated birthday images)
+- **Images**: Custom Instagram image + Unsplash
+- **Audio**: HTML5 Audio API with loop and volume control
 
 ## Current Status
-✅ Frontend fully functional with mock data
+✅ Frontend fully functional with all features
+✅ Background music integrated and working
+✅ Custom hero background image set
 ✅ Streamlined to 4 main sections (Hero, Wishes, Countdown, Gift)
 ✅ All interactive elements working
 ✅ Responsive design implemented
 ✅ Animations and effects active
 ✅ Services running (frontend on port 3000, backend on port 8001)
 
+## Music Implementation Details
+
+### File Structure:
+```
+/app/frontend/src/
+├── App.js (Audio initialization and control)
+├── mockData.js (Music playlist configuration)
+└── components/
+    └── BirthdayHero.jsx (Music toggle UI)
+```
+
+### Audio Configuration:
+- **Loop**: Enabled (continuous playback)
+- **Volume**: 0.5 (50%)
+- **Autoplay**: Disabled (user must click to start)
+- **Format**: MP3
+- **Delivery**: CDN (fast loading)
+
+### How to Update Music:
+1. Replace URL in `mockData.js` → `musicPlaylist.defaultTrack.url`
+2. Update title and artist information as needed
+3. No code changes required, just data update
+
 ## Next Action Items (Prioritized)
 
 ### P0 - Critical
-1. Add actual birthday music file (currently placeholder)
-2. Update birth date in mockData.js to actual date
-3. Customize wishes message further if needed
+1. ✅ Background music integrated - COMPLETED
+2. ✅ Custom background image set - COMPLETED
+3. Update birth date in mockData.js to Harsh's actual birthday
 
 ### P1 - High Priority
-1. Add guestbook feature for friends to leave messages
-2. Create backend API for storing wishes/messages
-3. Deploy to production
+1. Customize wishes message further if needed
+2. Test music playback across different browsers
+3. Add loading state for music player
 
 ### P2 - Nice to Have
-1. Social sharing functionality
-2. Download celebration images
-3. Email invitation feature
-4. Admin panel to customize content
+1. Add volume control slider
+2. Display current playing song info
+3. Add more songs to create a playlist
+4. Social sharing functionality
+5. Deploy to production
 
 ## Notes
-- Preview service experiencing temporary issues (infrastructure-related)
+- Preview service may experience temporary issues (infrastructure-related)
 - Application verified working on localhost:3000
+- Music file hosted on secure CDN with reliable access
 - All mock data can be easily replaced with real data
-- Music feature UI ready, needs audio file integration
 - Simplified design with focused content per user feedback
+- Music player fully functional - user clicks music icon to play/pause
+
+## How to Use the Website
+
+1. **Landing**: Hero section loads with custom background image
+2. **Music**: Click the music icon (top right) to start/stop background music
+3. **Navigation**: Scroll or click "Explore Your Special Day" button
+4. **Sections**: Experience wishes, countdown timer, and virtual gift
+5. **Gift**: Click the gift box to reveal special message
+
+## Browser Compatibility
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile responsive design
+- Audio tested on desktop browsers
+- Note: Some mobile browsers may require user interaction before playing audio

@@ -2,17 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import BirthdayHero from './components/BirthdayHero';
 import WishesSection from './components/WishesSection';
-import PhotoGallery from './components/PhotoGallery';
-import TimelineSection from './components/TimelineSection';
 import VirtualGift from './components/VirtualGift';
 import CountdownTimer from './components/CountdownTimer';
 import Footer from './components/Footer';
 import {
   birthdayPerson,
   heroImages,
-  galleryImages,
   birthdayWishes,
-  timelineMemories,
   virtualGift,
 } from './mockData';
 
@@ -54,10 +50,6 @@ function App() {
         birthDate={birthdayPerson.birthDate} 
         personName={birthdayPerson.name}
       />
-      
-      <PhotoGallery images={galleryImages} />
-      
-      <TimelineSection memories={timelineMemories} />
       
       <VirtualGift giftData={virtualGift} />
       

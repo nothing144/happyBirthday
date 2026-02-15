@@ -32,21 +32,39 @@ function App() {
   };
 
   useEffect(() => {
-    // Initialize audio with the actual music file
-    if (musicPlaylist.enabled && musicPlaylist.defaultTrack.url) {
-      audioRef.current = new Audio(musicPlaylist.defaultTrack.url);
-      audioRef.current.loop = true; // Loop the music
-      audioRef.current.volume = 0.5; // Set volume to 50%
+  if (musicPlaylist.enabled && musicPlaylist.defaultTrack.url) {
+    audioRef.current = new Audio(musicPlaylist.defaultTrack.url);
+    audioRef.current.loop = true;
+    audioRef.current.volume = 0.5;
+
+    // Try autoplay
+    const playPromise = audioRef.current.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          setIsMusicPlaying(true);
+        })
+        .catch(() => {
+          // If blocked, wait for first user click
+          const startAudio = () => {
+            audioRef.current.play();
+            setIsMusicPlaying(true);
+            document.removeEventListener("click", startAudio);
+          };
+          document.addEventListener("click", startAudio);
+        });
     }
-    
-    return () => {
-      // Cleanup audio when component unmounts
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
-  }, []);
+  }
+
+  return () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = null;
+    }
+  };
+}, []);
+
 
   return (
     <div className="App">

@@ -10,6 +10,7 @@ import {
   heroImages,
   birthdayWishes,
   virtualGift,
+  musicPlaylist,
 } from './mockData';
 
 function App() {
@@ -30,9 +31,20 @@ function App() {
   };
 
   useEffect(() => {
-    // Note: In production, you would have an actual audio file
-    // For now, this is just a placeholder
-    // audioRef.current = new Audio('/path-to-birthday-song.mp3');
+    // Initialize audio with the actual music file
+    if (musicPlaylist.enabled && musicPlaylist.defaultTrack.url) {
+      audioRef.current = new Audio(musicPlaylist.defaultTrack.url);
+      audioRef.current.loop = true; // Loop the music
+      audioRef.current.volume = 0.5; // Set volume to 50%
+    }
+    
+    return () => {
+      // Cleanup audio when component unmounts
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
   }, []);
 
   return (

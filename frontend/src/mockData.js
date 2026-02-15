@@ -1,7 +1,7 @@
 // Mock data for birthday website
 
 export const birthdayPerson = {
-  name: "Harsh Pandey",
+  name: "Shaswati",
   birthDate: "2025-01-15", // Example date - can be updated
 };
 
@@ -43,10 +43,10 @@ export const galleryImages = [
 ];
 
 export const birthdayWishes = {
-  title: "Happy Birthday, Harsh! 🎉",
-  mainMessage: `Dear Harsh,
+  title: "Happy Birthday, Shaswati! 🎉",
+  mainMessage: `Dear Shaswati,
 
-On this special day, I wanted to create something unique to celebrate you! Your friendship means so much, and I hope this year brings you endless joy, success, and wonderful memories.
+On this special day, I wanted to create something unique to celebrate your birthday! , and I hope this year brings you endless joy, success, and wonderful memories.
 
 May all your dreams come true, and may you continue to inspire everyone around you with your amazing personality!
 
@@ -89,9 +89,9 @@ export const timelineMemories = [
 export const virtualGift = {
   title: "A Special Gift for You! 🎁",
   message: "Click the gift box to reveal your surprise!",
-  revealMessage: `🎊 Happy Birthday, Harsh! 🎊
+  revealMessage: `🎊 Happy Birthday, Shaswati! 🎊
 
-Your gift is the countless memories we've shared and the many more to come. 
+Your gift is the countless memories you have and the many more to come. 
 
 Here's to celebrating YOU today and always! May this year be filled with:
 ✨ Joy and laughter

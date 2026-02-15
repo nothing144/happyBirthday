@@ -14,7 +14,8 @@ import {
 } from './mockData';
 
 function App() {
-  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(true);
+
   const audioRef = useRef(null);
 
   const toggleMusic = () => {

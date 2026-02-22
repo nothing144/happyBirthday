@@ -43,8 +43,8 @@ export const galleryImages = [
 ];
 
 export const birthdayWishes = {
-  title: "Happy Birthday, Shaswati! 🎉",
-  mainMessage: `Dear Shaswati,
+  title: "Happy Birthday, Shreya! 🎉",
+  mainMessage: `Dear Shreya,
 
 On this special day, I wanted to create something unique to celebrate your birthday! , and I hope this year brings you endless joy, success, and wonderful memories.
 
@@ -89,7 +89,7 @@ export const timelineMemories = [
 export const virtualGift = {
   title: "A Special Gift for You! 🎁",
   message: "Click the gift box to reveal your surprise!",
-  revealMessage: `🎊 Happy Birthday, Shaswati! 🎊
+  revealMessage: `🎊 Happy Birthday, Shreya! 🎊
 
 Your gift is the countless memories you have and the many more to come. 
 

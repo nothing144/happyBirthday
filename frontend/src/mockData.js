@@ -108,6 +108,6 @@ export const musicPlaylist = {
   defaultTrack: {
     title: "Ratiyaan",
     artist: "Hansika Pareek, Sagnik Kolay, Soham M",
-    url: "https://drive.google.com/file/d/113XXh2aHQbAk18MaRa4MaLFzC08-ltmd/view?usp=drive_link",
+    url: "https://drive.google.com/uc?export=download&id=113XXh2aHQbAk18MaRa4MaLFzC08-ltmd",
   },
 };

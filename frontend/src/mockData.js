@@ -1,7 +1,7 @@
 // Mock data for birthday website
 
 export const birthdayPerson = {
-  name: "Shaswati",
+  name: "Shreya",
   birthDate: "2025-01-15", // Example date - can be updated
 };
 

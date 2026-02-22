@@ -108,6 +108,6 @@ export const musicPlaylist = {
   defaultTrack: {
     title: "Ratiyaan",
     artist: "Hansika Pareek, Sagnik Kolay, Soham M",
-    url: "https://customer-assets.emergentagent.com/job_birthday-joy-64/artifacts/g96nf174_Ratiyaan%20-%20Hansika%20Pareek%20%20SagnikKolay%20%20Soham%20M%20%20StereoAuxHits%20Latest%20Hindi%20Love%20Song%202024%20-%20Hansika%20Pareek%20%28youtube%29.mp3",
+    url: "https://music.youtube.com/watch?v=-IrHSWo-MIY",
   },
 };

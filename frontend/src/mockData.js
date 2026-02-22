@@ -6,7 +6,7 @@ export const birthdayPerson = {
 };
 
 export const heroImages = [
-  "https://instagram.fixr3-3.fna.fbcdn.net/v/t51.82787-15/569297403_17993635703841861_7035891751236083204_n.webp?stp=dst-webp_s480x480&_nc_cat=109&ig_cache_key=Mzc1MDQwMzQ1ODg0MDM2NDg4Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=ZEAOQZuuE54Q7kNvwHCy6Ha&_nc_oc=Adk3l5vWAU-Y05pYTZU8Zoq8ieRPhmjPDRA6W_2_LD_Uua_4KU092yJwQy0p4Tb4fRQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fixr3-3.fna&_nc_gid=wwKt3mRU0culwkstDs9Gsg&oh=00_AftT7iuWQCiFdvuxu5OVrGKAx5SC2oLCMxwOO0hlqLgZ_g&oe=699727D0",
+  "https://scontent-bom2-1.xx.fbcdn.net/v/t1.15752-9/640395603_4403981859885092_4579323697960704794_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NTiNWciF8iEQ7kNvwHLrj61&_nc_oc=Adk_TNDGnN8ZWw7Cv1ZBnbpjSSJk8lCkItMT2t5V9O6v7ANtGeRUeVcgef0_R7-8BwVBzDQxkEfJ3KSIEYOAPHvA&_nc_zt=23&_nc_ht=scontent-bom2-1.xx&oh=03_Q7cD4gEd3TUu7YhWQENy42UOTnvnFkPmIPr64Alh-4mpNX19bg&oe=69C1EF07",
 ];
 
 export const galleryImages = [

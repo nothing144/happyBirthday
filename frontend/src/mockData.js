@@ -43,14 +43,14 @@ export const galleryImages = [
 ];
 
 export const birthdayWishes = {
-  title: "Happy Birthday, Shreya! 🎉",
+  title: "Happy Birthday, Shreya! 🎉🎈🥳",
   mainMessage: `Dear Shreya,
 
 On this special day, I wanted to create something unique to celebrate your birthday! , and I hope this year brings you endless joy, success, and wonderful memories.
 
 May all your dreams come true, and may you continue to inspire everyone around you with your amazing personality!
 
-Here's to another fantastic year ahead! 🎂✨`,
+Here's to another fantastic year ahead! 🎂`,
   
   closingNote: "Wishing you the happiest of birthdays!",
 };
@@ -91,15 +91,11 @@ export const virtualGift = {
   message: "Click the gift box to reveal your surprise!",
   revealMessage: `🎊 Happy Birthday, Shreya! 🎊
 
-Your gift is the countless memories you have and the many more to come. 
+Tera hona hi apne aap mein ek jaadu hai,
+Ye jo husn hai, tere hone se hi kaabu hai.
 
-Here's to celebrating YOU today and always! May this year be filled with:
-✨ Joy and laughter
-🌟 Success in all your endeavors
-💫 Health and happiness
-🎯 Achievement of all your goals
-
-Cheers to another amazing year! 🥳`,
+Log dhoondte honge jannat ki galiyan kahin aur,
+Hamare liye toh bas, tera chehra hi har sawaal ka hal hai! 🥳`,
 };
 
 export const musicPlaylist = {
@@ -108,6 +104,6 @@ export const musicPlaylist = {
   defaultTrack: {
     title: "Ratiyaan",
     artist: "Hansika Pareek, Sagnik Kolay, Soham M",
-    url: "https://drive.google.com/uc?export=download&id=113XXh2aHQbAk18MaRa4MaLFzC08-ltmd",
+    url: "/assets/High On You - Jind Universe (youtube).mp3",
   },
 };
